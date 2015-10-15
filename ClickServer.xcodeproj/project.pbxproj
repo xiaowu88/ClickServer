@@ -11,9 +11,9 @@
 		3A4A33F11BCF937B00CB7838 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33EA1BCF937B00CB7838 /* Log.cpp */; };
 		3A4A33F21BCF937B00CB7838 /* NetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33EC1BCF937B00CB7838 /* NetManager.cpp */; };
 		3A4A33F31BCF937B00CB7838 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33EE1BCF937B00CB7838 /* Tools.cpp */; };
+		3A4A33F91BCFA1A000CB7838 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33F61BCFA1A000CB7838 /* md5.c */; };
 		3A9058C51BC610A1006361B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9058C41BC610A1006361B8 /* main.cpp */; };
 		3A9058CD1BC6158A006361B8 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9058CC1BC6158A006361B8 /* libevent.a */; };
-		3A9059261BC61594006361B8 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A9059061BC61594006361B8 /* md5.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -90,13 +90,13 @@
 		3A4A33ED1BCF937B00CB7838 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
 		3A4A33EE1BCF937B00CB7838 /* Tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tools.cpp; sourceTree = "<group>"; };
 		3A4A33EF1BCF937B00CB7838 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		3A4A33F51BCFA1A000CB7838 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
+		3A4A33F61BCFA1A000CB7838 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		3A4A33F71BCFA1A000CB7838 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
+		3A4A33F81BCFA1A000CB7838 /* md5_loc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5_loc.h; sourceTree = "<group>"; };
 		3A9058C11BC610A1006361B8 /* ClickServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClickServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9058C41BC610A1006361B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3A9058CC1BC6158A006361B8 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent.a; sourceTree = "<group>"; };
-		3A9059051BC61594006361B8 /* conf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = conf.h; sourceTree = "<group>"; };
-		3A9059061BC61594006361B8 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
-		3A9059071BC61594006361B8 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		3A9059081BC61594006361B8 /* md5_loc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5_loc.h; sourceTree = "<group>"; };
 		3A90590A1BC61594006361B8 /* allocators.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = allocators.h; sourceTree = "<group>"; };
 		3A90590B1BC61594006361B8 /* document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = document.h; sourceTree = "<group>"; };
 		3A90590C1BC61594006361B8 /* encodedstream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encodedstream.h; sourceTree = "<group>"; };
@@ -210,6 +210,17 @@
 			path = event2;
 			sourceTree = "<group>";
 		};
+		3A4A33F41BCFA1A000CB7838 /* md5 */ = {
+			isa = PBXGroup;
+			children = (
+				3A4A33F51BCFA1A000CB7838 /* conf.h */,
+				3A4A33F61BCFA1A000CB7838 /* md5.c */,
+				3A4A33F71BCFA1A000CB7838 /* md5.h */,
+				3A4A33F81BCFA1A000CB7838 /* md5_loc.h */,
+			);
+			path = md5;
+			sourceTree = "<group>";
+		};
 		3A9058B81BC610A1006361B8 = {
 			isa = PBXGroup;
 			children = (
@@ -248,22 +259,11 @@
 		3A9058CE1BC61594006361B8 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				3A4A33F41BCFA1A000CB7838 /* md5 */,
 				3A4A33A91BCDF63000CB7838 /* LibEvent */,
-				3A9059041BC61594006361B8 /* md5-1.3.0 */,
 				3A9059091BC61594006361B8 /* rapidjson */,
 			);
 			path = Lib;
-			sourceTree = "<group>";
-		};
-		3A9059041BC61594006361B8 /* md5-1.3.0 */ = {
-			isa = PBXGroup;
-			children = (
-				3A9059051BC61594006361B8 /* conf.h */,
-				3A9059061BC61594006361B8 /* md5.c */,
-				3A9059071BC61594006361B8 /* md5.h */,
-				3A9059081BC61594006361B8 /* md5_loc.h */,
-			);
-			path = "md5-1.3.0";
 			sourceTree = "<group>";
 		};
 		3A9059091BC61594006361B8 /* rapidjson */ = {
@@ -389,8 +389,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A4A33F91BCFA1A000CB7838 /* md5.c in Sources */,
 				3A4A33F21BCF937B00CB7838 /* NetManager.cpp in Sources */,
-				3A9059261BC61594006361B8 /* md5.c in Sources */,
 				3A4A33F01BCF937B00CB7838 /* DBConnector.cpp in Sources */,
 				3A4A33F31BCF937B00CB7838 /* Tools.cpp in Sources */,
 				3A4A33F11BCF937B00CB7838 /* Log.cpp in Sources */,
@@ -486,6 +486,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(PROJECT_DIR)/ClickServer/Lib/LibEvent/include",
 					/usr/local/include,
+					"$(PROJECT_DIR)/ClickServer/Lib/",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -507,6 +508,7 @@
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(PROJECT_DIR)/ClickServer/Lib/LibEvent/include",
 					/usr/local/include,
+					"$(PROJECT_DIR)/ClickServer/Lib/",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

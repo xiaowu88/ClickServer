@@ -7,7 +7,7 @@
 //
 
 #include "Tools.h"
-#include "md5.h"
+#include "md5/md5.h"
 #include <sys/time.h>
 
 static	void print_sig(const unsigned char *sig)
