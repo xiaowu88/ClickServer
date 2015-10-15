@@ -9,7 +9,7 @@
 #ifndef __ClickServer__NetManager__
 #define __ClickServer__NetManager__
 
-#include <stdio.h>
+#include <iostream>
 
 class NetManager
 {
