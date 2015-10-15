@@ -9,7 +9,7 @@
 #include "Log.h"
 #include <sys/stat.h>
 #include <stdarg.h>
-#include <string>
+#include <cstring>
 
 #define MAX_FILE_LOG_BUFFER_SIZE 1024*8
 #define FILE_LOG_NAME "server_log.txt"
@@ -30,7 +30,7 @@ void Log::autoLog(const char * format, ...)
 #elif (SERVER_LOG == STD_LOG)
     char buf[MAX_FILE_LOG_BUFFER_SIZE];
     vsnprintf(buf, MAX_FILE_LOG_BUFFER_SIZE-3, format, args);
-    std::strcat(buf, "\n");
+    strcat(buf, "\n");
     
     // Linux, Mac, iOS, etc
     fprintf(stdout, "server: %s", buf);
