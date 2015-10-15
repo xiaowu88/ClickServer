@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A4A33E01BCE0B7400CB7838 /* NetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33DE1BCE0B7400CB7838 /* NetManager.cpp */; };
-		3A4A33E41BCE3C8D00CB7838 /* DBConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33E21BCE3C8D00CB7838 /* DBConnector.cpp */; };
+		3A4A33F01BCF937B00CB7838 /* DBConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33E51BCF937B00CB7838 /* DBConnector.cpp */; };
+		3A4A33F11BCF937B00CB7838 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33EA1BCF937B00CB7838 /* Log.cpp */; };
+		3A4A33F21BCF937B00CB7838 /* NetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33EC1BCF937B00CB7838 /* NetManager.cpp */; };
+		3A4A33F31BCF937B00CB7838 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33EE1BCF937B00CB7838 /* Tools.cpp */; };
 		3A9058C51BC610A1006361B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9058C41BC610A1006361B8 /* main.cpp */; };
 		3A9058CD1BC6158A006361B8 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9058CC1BC6158A006361B8 /* libevent.a */; };
 		3A9059261BC61594006361B8 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A9059061BC61594006361B8 /* md5.c */; };
-		3A90594E1BC615BC006361B8 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A90592E1BC615BC006361B8 /* Log.cpp */; };
-		3A90594F1BC615BC006361B8 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9059301BC615BC006361B8 /* Tools.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,10 +79,17 @@
 		3A4A33DB1BCDF63100CB7838 /* ratelim-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ratelim-internal.h"; sourceTree = "<group>"; };
 		3A4A33DC1BCDF63100CB7838 /* strlcpy-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "strlcpy-internal.h"; sourceTree = "<group>"; };
 		3A4A33DD1BCDF63100CB7838 /* util-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "util-internal.h"; sourceTree = "<group>"; };
-		3A4A33DE1BCE0B7400CB7838 /* NetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetManager.cpp; sourceTree = "<group>"; };
-		3A4A33DF1BCE0B7400CB7838 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
-		3A4A33E21BCE3C8D00CB7838 /* DBConnector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DBConnector.cpp; sourceTree = "<group>"; };
-		3A4A33E31BCE3C8D00CB7838 /* DBConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnector.h; sourceTree = "<group>"; };
+		3A4A33E51BCF937B00CB7838 /* DBConnector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DBConnector.cpp; sourceTree = "<group>"; };
+		3A4A33E61BCF937B00CB7838 /* DBConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnector.h; sourceTree = "<group>"; };
+		3A4A33E71BCF937B00CB7838 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
+		3A4A33E81BCF937B00CB7838 /* GameMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMacros.h; sourceTree = "<group>"; };
+		3A4A33E91BCF937B00CB7838 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		3A4A33EA1BCF937B00CB7838 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
+		3A4A33EB1BCF937B00CB7838 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
+		3A4A33EC1BCF937B00CB7838 /* NetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetManager.cpp; sourceTree = "<group>"; };
+		3A4A33ED1BCF937B00CB7838 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		3A4A33EE1BCF937B00CB7838 /* Tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tools.cpp; sourceTree = "<group>"; };
+		3A4A33EF1BCF937B00CB7838 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 		3A9058C11BC610A1006361B8 /* ClickServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClickServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9058C41BC610A1006361B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3A9058CC1BC6158A006361B8 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent.a; sourceTree = "<group>"; };
@@ -116,13 +123,6 @@
 		3A9059231BC61594006361B8 /* reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reader.h; sourceTree = "<group>"; };
 		3A9059241BC61594006361B8 /* stringbuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stringbuffer.h; sourceTree = "<group>"; };
 		3A9059251BC61594006361B8 /* writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = writer.h; sourceTree = "<group>"; };
-		3A90592B1BC615BC006361B8 /* Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Debug.h; sourceTree = "<group>"; };
-		3A90592C1BC615BC006361B8 /* GameMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMacros.h; sourceTree = "<group>"; };
-		3A90592D1BC615BC006361B8 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
-		3A90592E1BC615BC006361B8 /* Log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Log.cpp; sourceTree = "<group>"; };
-		3A90592F1BC615BC006361B8 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
-		3A9059301BC615BC006361B8 /* Tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tools.cpp; sourceTree = "<group>"; };
-		3A9059311BC615BC006361B8 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,13 +208,6 @@
 				3A4A33D51BCDF63100CB7838 /* util.h */,
 			);
 			path = event2;
-			sourceTree = "<group>";
-		};
-		3A4A33E11BCE27B300CB7838 /* Handlers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Handlers;
 			sourceTree = "<group>";
 		};
 		3A9058B81BC610A1006361B8 = {
@@ -325,44 +318,19 @@
 		3A9059271BC615BC006361B8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				3A9059281BC615BC006361B8 /* Common */,
-				3A9059321BC615BC006361B8 /* Logic */,
-				3A9059331BC615BC006361B8 /* Net */,
+				3A4A33E51BCF937B00CB7838 /* DBConnector.cpp */,
+				3A4A33E61BCF937B00CB7838 /* DBConnector.h */,
+				3A4A33E71BCF937B00CB7838 /* Debug.h */,
+				3A4A33E81BCF937B00CB7838 /* GameMacros.h */,
+				3A4A33E91BCF937B00CB7838 /* Header.h */,
+				3A4A33EA1BCF937B00CB7838 /* Log.cpp */,
+				3A4A33EB1BCF937B00CB7838 /* Log.h */,
+				3A4A33EC1BCF937B00CB7838 /* NetManager.cpp */,
+				3A4A33ED1BCF937B00CB7838 /* NetManager.h */,
+				3A4A33EE1BCF937B00CB7838 /* Tools.cpp */,
+				3A4A33EF1BCF937B00CB7838 /* Tools.h */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		3A9059281BC615BC006361B8 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				3A90592B1BC615BC006361B8 /* Debug.h */,
-				3A90592C1BC615BC006361B8 /* GameMacros.h */,
-				3A90592D1BC615BC006361B8 /* Header.h */,
-				3A90592E1BC615BC006361B8 /* Log.cpp */,
-				3A90592F1BC615BC006361B8 /* Log.h */,
-				3A9059301BC615BC006361B8 /* Tools.cpp */,
-				3A9059311BC615BC006361B8 /* Tools.h */,
-				3A4A33E21BCE3C8D00CB7838 /* DBConnector.cpp */,
-				3A4A33E31BCE3C8D00CB7838 /* DBConnector.h */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		3A9059321BC615BC006361B8 /* Logic */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Logic;
-			sourceTree = "<group>";
-		};
-		3A9059331BC615BC006361B8 /* Net */ = {
-			isa = PBXGroup;
-			children = (
-				3A4A33E11BCE27B300CB7838 /* Handlers */,
-				3A4A33DE1BCE0B7400CB7838 /* NetManager.cpp */,
-				3A4A33DF1BCE0B7400CB7838 /* NetManager.h */,
-			);
-			path = Net;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,11 +389,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A4A33E41BCE3C8D00CB7838 /* DBConnector.cpp in Sources */,
-				3A4A33E01BCE0B7400CB7838 /* NetManager.cpp in Sources */,
-				3A90594F1BC615BC006361B8 /* Tools.cpp in Sources */,
+				3A4A33F21BCF937B00CB7838 /* NetManager.cpp in Sources */,
 				3A9059261BC61594006361B8 /* md5.c in Sources */,
-				3A90594E1BC615BC006361B8 /* Log.cpp in Sources */,
+				3A4A33F01BCF937B00CB7838 /* DBConnector.cpp in Sources */,
+				3A4A33F31BCF937B00CB7838 /* Tools.cpp in Sources */,
+				3A4A33F11BCF937B00CB7838 /* Log.cpp in Sources */,
 				3A9058C51BC610A1006361B8 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
