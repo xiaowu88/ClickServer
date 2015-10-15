@@ -9,6 +9,7 @@
 #include "Log.h"
 #include <sys/stat.h>
 #include <stdarg.h>
+#include <string>
 
 #define MAX_FILE_LOG_BUFFER_SIZE 1024*8
 #define FILE_LOG_NAME "server_log.txt"
