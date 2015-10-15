@@ -30,7 +30,7 @@ void Log::autoLog(const char * format, ...)
 #elif (SERVER_LOG == STD_LOG)
     char buf[MAX_FILE_LOG_BUFFER_SIZE];
     vsnprintf(buf, MAX_FILE_LOG_BUFFER_SIZE-3, format, args);
-    strcat(buf, "\n");
+    std::strcat(buf, "\n");
     
     // Linux, Mac, iOS, etc
     fprintf(stdout, "server: %s", buf);
