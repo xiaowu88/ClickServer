@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3A4A33E01BCE0B7400CB7838 /* NetManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33DE1BCE0B7400CB7838 /* NetManager.cpp */; };
+		3A4A33E41BCE3C8D00CB7838 /* DBConnector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A4A33E21BCE3C8D00CB7838 /* DBConnector.cpp */; };
 		3A9058C51BC610A1006361B8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9058C41BC610A1006361B8 /* main.cpp */; };
 		3A9058CD1BC6158A006361B8 /* libevent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9058CC1BC6158A006361B8 /* libevent.a */; };
 		3A9059261BC61594006361B8 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A9059061BC61594006361B8 /* md5.c */; };
 		3A90594E1BC615BC006361B8 /* Log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A90592E1BC615BC006361B8 /* Log.cpp */; };
 		3A90594F1BC615BC006361B8 /* Tools.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9059301BC615BC006361B8 /* Tools.cpp */; };
-		3A9059781BC651BF006361B8 /* MySqlConnetor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A9059761BC651BF006361B8 /* MySqlConnetor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,6 +81,8 @@
 		3A4A33DD1BCDF63100CB7838 /* util-internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "util-internal.h"; sourceTree = "<group>"; };
 		3A4A33DE1BCE0B7400CB7838 /* NetManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NetManager.cpp; sourceTree = "<group>"; };
 		3A4A33DF1BCE0B7400CB7838 /* NetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetManager.h; sourceTree = "<group>"; };
+		3A4A33E21BCE3C8D00CB7838 /* DBConnector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DBConnector.cpp; sourceTree = "<group>"; };
+		3A4A33E31BCE3C8D00CB7838 /* DBConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBConnector.h; sourceTree = "<group>"; };
 		3A9058C11BC610A1006361B8 /* ClickServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ClickServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9058C41BC610A1006361B8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		3A9058CC1BC6158A006361B8 /* libevent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libevent.a; sourceTree = "<group>"; };
@@ -121,8 +123,6 @@
 		3A90592F1BC615BC006361B8 /* Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Log.h; sourceTree = "<group>"; };
 		3A9059301BC615BC006361B8 /* Tools.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Tools.cpp; sourceTree = "<group>"; };
 		3A9059311BC615BC006361B8 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
-		3A9059761BC651BF006361B8 /* MySqlConnetor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MySqlConnetor.cpp; sourceTree = "<group>"; };
-		3A9059771BC651BF006361B8 /* MySqlConnetor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySqlConnetor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,6 +342,8 @@
 				3A90592F1BC615BC006361B8 /* Log.h */,
 				3A9059301BC615BC006361B8 /* Tools.cpp */,
 				3A9059311BC615BC006361B8 /* Tools.h */,
+				3A4A33E21BCE3C8D00CB7838 /* DBConnector.cpp */,
+				3A4A33E31BCE3C8D00CB7838 /* DBConnector.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -349,8 +351,6 @@
 		3A9059321BC615BC006361B8 /* Logic */ = {
 			isa = PBXGroup;
 			children = (
-				3A9059761BC651BF006361B8 /* MySqlConnetor.cpp */,
-				3A9059771BC651BF006361B8 /* MySqlConnetor.h */,
 			);
 			path = Logic;
 			sourceTree = "<group>";
@@ -421,7 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9059781BC651BF006361B8 /* MySqlConnetor.cpp in Sources */,
+				3A4A33E41BCE3C8D00CB7838 /* DBConnector.cpp in Sources */,
 				3A4A33E01BCE0B7400CB7838 /* NetManager.cpp in Sources */,
 				3A90594F1BC615BC006361B8 /* Tools.cpp in Sources */,
 				3A9059261BC61594006361B8 /* md5.c in Sources */,
